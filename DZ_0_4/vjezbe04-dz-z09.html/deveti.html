@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+function ispisiSavrseneBrojeve(broj){
+  for(let i=1;i<=broj;i++){
+    let sum=0;
+    for(let j=1;j<i;j++){
+      if(i%j===0){
+        sum+=j;
+      }
+    }
+    if(sum===i){
+      document.write(+i+", ");
+    }
+  }
+}
+document.write("Savrseni brojevi su: ");
+ispisiSavrseneBrojeve(100);
+ </script>
+</body>
+</html>

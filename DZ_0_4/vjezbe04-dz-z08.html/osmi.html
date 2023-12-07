@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ function filtrirajVrijednosti(arr) {
+  const novoPolje = arr.filter(vrijednost => {
+    return /[A-Z]/.test(vrijednost);
+  });
+  
+  console.log(novoPolje);
+}
+const arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+filtrirajVrijednosti(arr);
+ </script>
+</body>
+</html>

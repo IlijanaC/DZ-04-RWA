@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ function ispisiRandomBrojeve(prviBroj, drugiBroj){
+  for(let i=0;i<5;i++){
+let randomBroj=Math.floor(Math.random()*(drugiBroj-prviBroj+1))+prviBroj;
+document.write(randomBroj+", ");
+  }
+ }
+ ispisiRandomBrojeve(1,20);
+ </script>
+</body>
+</html>
